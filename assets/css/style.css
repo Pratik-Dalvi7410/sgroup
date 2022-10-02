@@ -11224,15 +11224,22 @@ div#scrollbar::-webkit-scrollbar-thumb {
     margin: 0.3rem;
   }
 
-  .logo img {
+  .logo {
     max-width: 45%;
+  }
+
+  .logo img {
+    width: 100%;
   }
 }
 
 
 @media (max-width: 470px) {
-  .logo img {
+  .logo {
     max-width: 55%;
+  }
+  .logo img {
+    width: 100%; 
   }
 }
 
