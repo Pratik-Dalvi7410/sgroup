@@ -11238,8 +11238,9 @@ div#scrollbar::-webkit-scrollbar-thumb {
   .logo {
     max-width: 55%;
   }
+
   .logo img {
-    width: 100%; 
+    width: 100%;
   }
 }
 
@@ -11325,6 +11326,10 @@ body {
   width: calc(100% - 320px);
   justify-content: center;
 
+}
+
+.primary-menu .menu-area .main-menu {
+  justify-content: center;
 }
 
 .case-study-single .head-cover .post-thumb {
