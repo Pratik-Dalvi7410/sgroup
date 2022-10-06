@@ -5198,7 +5198,8 @@
 }
 
 .achievement.style-2 {
-  background-image: url(../../assets/images/achievement/bg2.jpg);
+  background: linear-gradient(rgba(23, 162, 184, 0.9), rgba(9, 60, 130, 0.9)), url(../images/about/certificates_bg.jpg) no-repeat fixed center;
+  background-size: 100% auto;
 }
 
 @media (max-width: 575px) {
