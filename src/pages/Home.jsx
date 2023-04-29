@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import Header from "../components/header/Header";
 import "./Home.css";
 import { TypeAnimation } from "react-type-animation";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,7 +6,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper";
 import { BsBuildings } from "react-icons/bs";
-import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import cerd1Image from "../assets/images/home/01.png";
 import cerd2Image from "../assets/images/home/02.png";
 import logo1 from "../assets/images/home/1.png";
@@ -37,7 +35,7 @@ import logo24 from "../assets/images/home/24.png";
 import logo25 from "../assets/images/home/25.png";
 import logo26 from "../assets/images/home/26.png";
 import Video2 from "../assets/Video/Network.mp4";
-import footerlogo from "../assets/images/home/Footerlogo.png";
+import footerlogo from "../assets/images/logo/logo.png";
 import missionImage from "../assets/images/home/mission.png";
 import visionImage from "../assets/images/home/vision.png";
 import useWindowDimensions from "../hooks/Dimensions";
@@ -371,50 +369,29 @@ const Home = () => {
         </div>
       </section>
 
-      <section class="footer">
-        <div class="footer-box">
-          <div className="footer-logo">
-            <div className="logo">
-              <a href="index.html ">
-                <img src={footerlogo} alt="Logo" />
-              </a>
-              <li>
-                <a href="#">info@s-group.org</a>
-              </li>
-              <li>+91 0250 235 2100</li>
+      <section class="footer py-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-5">
+              <img src={footerlogo} className="footer-logo mb-3" alt="Footer Logo" />
+              <p className="footer-email mb-1">info@s-group.org</p>
+              <p className="footer-number">+91 0250 235 2100</p>
             </div>
-          </div>
-
-          <div className="footer-Group">
-            <div className="About-Us">
-              <h1> About Us </h1>
-              <li>
-                <a href="#">Home</a>
-                <a href="#">Our Product </a>
-                <a href="#">Contact Us</a>
-              </li>
-            </div>
-
-            <div className="We-Are-Here">
-              <h1> We Are Here! </h1>
-              <h6>Office and Unit</h6>
-              <p>
-                B- 146/147/68, Musalgaon M.I.D.C, Sinnar - Shirdi Road, Sinnar,
-                Nashik , Maharashtra - 422 113
-              </p>
+            <div className="col-lg-7">
+              <div className="row">
+                <div className="col-lg-6">
+                  <p className="footer-links-title mb-4">About Us</p>
+                  <ul className="footer-links m-0 p-0 d-flex flex-column align-items-start">
+                    <li>Home</li>
+                    <li>Our Products</li>
+                    <li>Contact us</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="footer-bottom">
-					<div class="fb-left">
-						<p>Copyright 2022 © <a href="index.html">SGROUP</a>. Design &amp; Developed by <a href="http://brighterbeetechnologies.com/" target="_blank">BBT</a></p>
-					</div>
-				</div>
       </section>
-
-      <div className="scroll">
-        <a href="#"><MdKeyboardDoubleArrowUp /></a>
-      </div> 
     </>
   );
 };
