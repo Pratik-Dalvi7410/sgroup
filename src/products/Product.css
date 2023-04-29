@@ -1,0 +1,110 @@
+.page-header {
+  background-color: #f9fafb;
+  padding-bottom: 0 !important;
+  margin-top: 60px;
+  position: relative;
+}
+.home-banner-image {
+  padding: 0rem 0 16rem 0;
+  background: linear-gradient(
+      70deg,
+      rgb(243, 113, 34, 0.3),
+      rgb(73, 188, 247, 0.3)
+    ),
+    url("../assets/images/home/bannerBg.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.image-overlay-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 53, 81, 0.95),
+    rgba(73, 188, 247, 0.95)
+  );
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.page-header .page-header-item .post-content {
+  text-align: center;
+  z-index: 99;
+  position: absolute;
+  top: 6rem;
+}
+.page-header .page-header-item .post-content h2 {
+  color: rgb(243, 113, 34) !important;
+  background: #fff;
+  border-radius: 500px;
+  padding: 16.7px 3.9rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-right: 5px solid rgb(243, 113, 34);
+  border-left: 5px solid rgb(243, 113, 34);
+}
+
+/* products-list-area */
+
+.products-list-area .container {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.main-product-title {
+  margin: 0 auto;
+  padding: 5px 40px;
+  background: #dcf3ff;
+  border-radius: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #007ab8;
+  display: table;
+  font-weight: 500;
+}
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.products-list-area .product-card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8));
+}
+
+.products-list-area .product-card p {
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  transition: 0.5s;
+  position: relative;
+}
+.main-product-title span {
+  color: #e35a3c;
+  font-weight: 400;
+}

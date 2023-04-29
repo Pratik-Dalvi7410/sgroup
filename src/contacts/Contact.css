@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  list-style: none;
+  outline: none;
+}
+
+
+.breadcamp {
+  border-bottom: 1px solid #ebebeb;
+}
+.breadcamp ul li {
+  padding: 4px;
+  padding: 0;
+}
+.breadcamp ul li a {
+  padding: 8px;
+  color: #403663;
+  position: relative;
+  outline: none;
+  font-size: 16px;
+}
+.breadcamp ul li a.active {
+  color: #515c84;
+}
+.breadcamp ul li a {
+  padding: 8px;
+  color: #403663;
+  position: relative;
+  outline: none;
+  font-size: 16px;
+}
+.breadcamp ul li a:hover {
+color: #ff7555;
+
+}
+.breadcamp ul li a.active {
+  color: #515c84;
+}
+
+
+h4 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #1f8ac9;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  margin: 0.25em 0 0.25em;
+}
+.breadcamp ul {
+  min-height: 40px;
+}
+.contact.style-2 .section-wrapper .contact-part .contact-title {
+  margin-bottom: 30px;
+  
+}
+.padding-tb {
+  padding: 100px 0;
+}
+
+.contact .section-wrapper .contact-form input{
+  width: calc((100% - 30px) / 2);
+}
+.contact .section-wrapper .contact-form input[type="text"] {
+  outline: none;
+}
+
+.contact.style-2 .section-wrapper .contact-part .contact-form input {
+  border: 1px solid #ecf0f3;
+  font-size: 16px;
+}
+
+.contact.style-2 .section-wrapper .contact-part .contact-form textarea {
+  border-radius: 28px;
+  padding: 15px;
+  padding-left: 20px;
+  width: 100%;
+  border: 1px solid #ecf0f3;
+}
+.contact.style-2 .section-wrapper .contact-part .contact-form input[type="submit"] {
+  padding: 0 55px;
+  background: #49bcf7;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  margin-top: 30px;
+}
+.contact .section-wrapper .contact-form input, .contact .section-wrapper .contact-form .cus_sel {
+  height: 50px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  outline: none;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  border: none;
+  font-size: 16px;
+}
+
+.contact.style-2 .section-wrapper .info-part .schedule {
+  padding: 30px !important;
+  box-shadow: 0 0 20px rgba(13, 0, 12, 0.07);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  margin-bottom: 70px !important;
+}
+.contact.style-2 .section-wrapper .info-part .schedule {
+  padding: 30px !important;
+  box-shadow: 0 0 20px rgba(13, 0, 12, 0.07);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  margin-bottom: 70px !important;
+}
+.contact.style-2 .section-wrapper .info-part .schedule li {
+  color: #53627c;
+  font-size: 16px;
+  line-height: 32px;
+  padding: 0;
+}
+.contact.style-2 .section-wrapper .info-part .schedule li i {
+  margin-right: 10px;
+}
+
+.contact.style-2 .section-wrapper .info-part .schedule li span {
+  color: #ff7555;
+}
+
+.contact.style-2 .section-wrapper .info-part .contact-info h4 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #1f8ac9;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+}
+.contact.style-2 .section-wrapper .info-part .contact-info p {
+  margin: 0;
+  color: #53627c;
+  line-height: 26px;
+}
+.contact.style-2 .section-wrapper .info-part .contact-info p {
+  margin: 0;
+  color: #53627c;
+  line-height: 26px;
+}
+.contact.style-2 .section-wrapper .info-part .contact-info p.style-2 {
+  margin-bottom: 15px;
+}
+.contact.style-2 .section-wrapper .info-part .contact-info a {
+  text-decoration: underline;
+  font-size: 15px;
+  color: #49bcf7;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+.contact.style-2 .section-wrapper .info-part .contact-info ul.details li {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.contact.style-2 .section-wrapper .info-part .contact-info ul.details li p {
+  color: #9299b2;
+  margin-bottom: 0px;
+  font-weight: 400;
+}
+
+.contact.style-2 .section-wrapper .info-part .contact-info ul.details li {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: rgba(64, 54, 99, 0.8);
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 400px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 400px;
+}
+
+

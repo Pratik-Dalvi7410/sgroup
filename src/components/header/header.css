@@ -1,0 +1,36 @@
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: #fff !important;
+}
+a.logoimg {
+  padding: 17px 0;
+  outline: none;
+  width: 250px;
+  text-align: left;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+a.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: #403663;
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+a.nav-link:hover {
+  color: #ff7555;
+}
+
+@media (max-width: 576px) {
+  img {
+    max-width: 482px;
+  }
+}
