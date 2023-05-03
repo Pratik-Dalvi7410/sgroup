@@ -34,3 +34,17 @@ a.nav-link:hover {
     max-width: 482px;
   }
 }
+
+.header-logo {
+  width: 15rem;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    margin-right: 0 !important;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+.page-header {
+  padding-bottom: 0 !important;
+  margin-top: 60px;
+  position: relative;
+  height: 15rem;
+}
+.bg-video {
+width: 100%;
+height: 100%;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+
+.video-overlay-bg {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: linear-gradient(
+  45deg,
+  rgba(0, 53, 81, 0.95),
+  rgba(73, 188, 247, 0.95)
+);
+z-index: -1;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+h3{
+  font-size: 30px;
+    margin: 0;
+    margin-bottom: 15px;
+    color: #1f8ac9;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    text-align: start;
+    text-transform: capitalize;
+}
+p{
+  color:#515c84;
+}
+.post-card{
+  display: flex;
+  justify-content: center;
+}
+.post-card img {
+  width: 70%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+
+h4 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #1f8ac9;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  margin: 0.25em 0 0.25em;
+}
+
+.case-study-single .head-cover {
+  margin-bottom: 40px;
+}
+
+.case-study-single .section-wrapper {
+  align-items: stretch;
+}
+
+.case-info{
+  border-bottom: 1px solid #ecf0f3;
+  padding-bottom: 20px;
+}
+
+
+.section-wrapper .case-info p {
+  line-height: 28px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: rgba(64, 54, 99, 0.8);
+}
+
+.brochure li{
+  padding: 30px 0 0;
+}
+.brochure ul{
+  padding: 0;
+}
+
+
+
+.task-challenge{
+  border-bottom: 1px solid #ecf0f3;
+}
+
+.task-challenge table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+.task-challenge table td {
+  padding: 1rem;
+  border: 1px solid #cfcfcf;
+  color: rgba(64, 54, 99, 0.8);
+}
+.task-challenge table th{
+   padding: 1rem;
+    border: 1px solid #cfcfcf;
+    background: #f37122;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+/* Shrink Labels (PVC) */
+
+.one-img{
+  display: flex;
+    justify-content: center;
+}
+.one-img img{
+  width: 70%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px
+}
+
+.case-info p ul li  {
+  list-style-type: square;
+}
+b{
+  font-weight: bolder;
+    color: #403663;
+}

@@ -2,6 +2,9 @@ import React from "react";
 import "./Contact.css";
 import {AiOutlineClockCircle} from "react-icons/Ai";
 import {HiLockClosed} from "react-icons/Hi";
+import video from "../assets/Video/Network.mp4";
+import Footer from "../components/footer/Footer";
+import Map from "../components/GoogleMap/Map";
 
 
 function Contact() {
@@ -9,8 +12,10 @@ function Contact() {
   return (
     <>
       <div className="page-header">
-        <div className="home-banner-image"> </div>
-        <div className="image-overlay-bg"></div>
+      <video className="bg-video" autoPlay muted loop={true} controls={false} >
+          <source src={video} type="video/mp4" />
+        </video>
+        <div className="video-overlay-bg"></div>
         <div className="container">
           <div className="page-header-item d-flex align-items-center justify-content-center">
             <div className="post-content">
@@ -20,33 +25,7 @@ function Contact() {
         </div>
       </div>
 
-      <div className="breadcamp">
-        <div className="container">
-          <ul className="d-flex flex-wrap justify-content-center align-items-center">
-            <li>
-              <a href="index.html">Home </a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-chevron-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
-            </li>
-            <li>
-              <a class="active">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="contact style-2 padding-tb">
+      <div className="contact style-2 py-3">
         <div className="container">
           <div className="section-wrapper row justify-content-center">
             <div className="col-lg-8 col-12">
@@ -105,13 +84,8 @@ function Contact() {
           </div>
         </div>
       </div>
-
-      <div className="mapouter">
-        <div className="gmap_canvas">
-
-        </div>
-    </div>
-
+    <Map/>
+    <Footer/>
 
     </>
   );

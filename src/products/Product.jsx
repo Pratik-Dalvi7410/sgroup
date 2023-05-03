@@ -25,14 +25,17 @@ import TransparentPouches from "../assets/images/products/Transparent-pouches.jp
 import ShrinkWrap from "../assets/images/products/Shrink-Wrap.jpg";
 import LDPEMilk from "../assets/images/products/LDPE-Milk-Bag.jpg";
 import Corrugated from "../assets/images/products/Corrugated-box.jpg";
-
+import video from "../assets/Video/Network.mp4";
+import Footer from "../components/footer/Footer";
 
 const Product = () => {
   return (
     <>
       <div className="page-header">
-        <div className="home-banner-image"> </div>
-        <div className="image-overlay-bg"></div>
+        <video className="bg-video" autoPlay muted loop={true} controls={false}>
+          <source src={video} type="video/mp4" />
+        </video>
+        <div className="video-overlay-bg"></div>
         <div className="container">
           <div className="page-header-item d-flex align-items-center justify-content-center">
             <div className="post-content">
@@ -48,28 +51,36 @@ const Product = () => {
         <div className="container">
           <h3 className="main-product-title mb-4">PVC Shrink Film</h3>
           <div className="row justify-content-center">
-
             <div className="col-sm-12 col-md-12 col-lg-4">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${packaging })`}}>
-                <p>Packaging Films</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${packaging})`,
+                }}
+              >
+                <p className="product-card-title">Packaging Films</p>
+              </div>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${tubing})`}}>
-                <p>Tubing Films</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${tubing})`,
+                }}
+              >
+                <p className="product-card-title">Tubing Films</p>
+              </div>
             </div>
 
             <div className="col-sm-12 col-md-12 col-lg-4">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${busbar} )` }}>
-                <p>Busbar</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${busbar})`,
+                }}
+              >
+                <p className="product-card-title">Busbar</p>
+              </div>
             </div>
           </div>
         </div>
@@ -77,30 +88,40 @@ const Product = () => {
 
       <div className="products-list-area pt-4 mt-4">
         <div className="container">
-        <h3 class="main-product-title mb-4">Labels &nbsp; | &nbsp; <span>PVC Shrink Labels</span></h3>
+          <h3 class="main-product-title mb-4">
+            Labels &nbsp; | &nbsp; <span>PVC Shrink Labels</span>
+          </h3>
           <div className="row justify-content-center">
-
             <div className="col-sm-12 col-md-12 col-lg-4">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${shrink })`}}>
-                <p>Shrink Labels (PVC)</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${shrink})`,
+                }}
+              >
+                <p className="product-card-title">Shrink Labels (PVC)</p>
+              </div>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${petcast})`}}>
-                <p> Pet Shrink Labels</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${petcast})`,
+                }}
+              >
+                <p className="product-card-title"> Pet Shrink Labels</p>
+              </div>
             </div>
 
             <div className="col-sm-12 col-md-12 col-lg-4">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${Plain})`}}>
-                <p>Plain and printed pouches</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${Plain})`,
+                }}
+              >
+                <p className="product-card-title">Plain and printed pouches</p>
+              </div>
             </div>
           </div>
         </div>
@@ -108,196 +129,248 @@ const Product = () => {
 
       <div className="products-list-area pt-4 mt-4">
         <div className="container">
-        <h3 class="main-product-title mb-4">Labels &nbsp; | &nbsp; <span>BOPP Labels</span></h3>
+          <h3 class="main-product-title mb-4">
+            Labels &nbsp; | &nbsp; <span>BOPP Labels</span>
+          </h3>
           <div className="row justify-content-center">
-
             <div className="col-sm-12 col-md-6 col-lg-6">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${Pearlized})`}}>
-                <p><p>Pearlized BOPP</p></p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${Pearlized})`,
+                }}
+              >
+                <p className="product-card-title">Pearlized BOPP</p>
+              </div>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card " style= {{backgroundImage:`url(${Transparent})`}}>
-                <p>Transparent BOPP</p>
-                </div>
-              </a>
+              <div
+                className="product-card "
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${Transparent})`,
+                }}
+              >
+                <p className="product-card-title">Transparent BOPP</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>  
+      </div>
 
       <div className="products-list-area pt-4 mt-4">
         <div className="container">
-        <h3 class="main-product-title mb-4">Labels </h3>
+          <h3 class="main-product-title mb-4">Labels </h3>
           <div className="row justify-content-center">
-
             <div className="col-sm-12">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${Self})`}}>
-                <p>Self Adhesive Label</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${Self})`,
+                }}
+              >
+                <p className="product-card-title">Self Adhesive Label</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>  
+      </div>
 
       <div className="products-list-area pt-4 mt-4">
         <div className="container">
-        <h3 class="main-product-title mb-4">LAMINATES</h3>
+          <h3 class="main-product-title mb-4">LAMINATES</h3>
           <div className="row justify-content-center">
-
             <div className="col-sm-12 col-md-6 col-lg-3">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${StandUp})`}}>
-                <p>Stand up pouch</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${StandUp})`,
+                }}
+              >
+                <p className="product-card-title">Stand up pouch</p>
+              </div>
             </div>
 
             <div className="col-sm-12 col-md-6 col-lg-3">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${Shaped})`}}>
-                <p>Shaped pouches</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${Shaped})`,
+                }}
+              >
+                <p className="product-card-title">Shaped pouches</p>
+              </div>
             </div>
 
             <div className="col-sm-12 col-md-6 col-lg-3">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${pouches})`}}>
-                <p>3 side seal pouches</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${pouches})`,
+                }}
+              >
+                <p className="product-card-title">3 side seal pouches</p>
+              </div>
             </div>
 
             <div className="col-sm-12 col-md-6 col-lg-3">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${Kraft})`}}>
-                <p>Kraft paper pouch</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${Kraft})`,
+                }}
+              >
+                <p className="product-card-title">Kraft paper pouch</p>
+              </div>
             </div>
 
             <div className="col-sm-12 col-md-6 col-lg-3">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${Pouches})`}}>
-                <p>Pouch with handle</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${Pouches})`,
+                }}
+              >
+                <p className="product-card-title">Pouch with handle</p>
+              </div>
             </div>
 
             <div className="col-sm-12 col-md-6 col-lg-3">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${Spout})`}}>
-                <p>Spout pouch</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${Spout})`,
+                }}
+              >
+                <p className="product-card-title">Spout pouch</p>
+              </div>
             </div>
 
             <div className="col-sm-12 col-md-6 col-lg-3">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${Window})`}}>
-                <p>Window pouches</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${Window})`,
+                }}
+              >
+                <p className="product-card-title">Window pouches</p>
+              </div>
             </div>
 
             <div className="col-sm-12 col-md-6 col-lg-3">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${Centre})`}}>
-                <p>Centre seal pouches</p>
-                </div>
-              </a>
-            </div>
-
-
-            <div className="col-sm-12 col-md-6 col-lg-3">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${Aluminium})`}}>
-                <p>Aluminium foil pouches</p>
-                </div>
-              </a>
-            </div>
-
-
-            <div className="col-sm-12 col-md-6 col-lg-3">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${Paper})`}}>
-                <p>Paper pouches</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${Centre})`,
+                }}
+              >
+                <p className="product-card-title">Centre seal pouches</p>
+              </div>
             </div>
 
             <div className="col-sm-12 col-md-6 col-lg-3">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${Sidegusset})`}}>
-                <p>Side gusset pouch</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${Aluminium})`,
+                }}
+              >
+                <p className="product-card-title">Aluminium foil pouches</p>
+              </div>
             </div>
 
             <div className="col-sm-12 col-md-6 col-lg-3">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${Zipper})`}}>
-                <p>Zipper pouch</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${Paper})`,
+                }}
+              >
+                <p className="product-card-title">Paper pouches</p>
+              </div>
+            </div>
+
+            <div className="col-sm-12 col-md-6 col-lg-3">
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${Sidegusset})`,
+                }}
+              >
+                <p className="product-card-title">Side gusset pouch</p>
+              </div>
+            </div>
+
+            <div className="col-sm-12 col-md-6 col-lg-3">
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${Zipper})`,
+                }}
+              >
+                <p className="product-card-title">Zipper pouch</p>
+              </div>
             </div>
 
             <div className="col-sm-12 ">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${TransparentPouches})`}}>
-                <p>Transparent pouches</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${TransparentPouches})`,
+                }}
+              >
+                <p className="product-card-title">Transparent pouches</p>
+              </div>
             </div>
           </div>
         </div>
-      </div> 
+      </div>
 
       <div className="products-list-area pt-4 mt-4">
         <div className="container">
-        <h3 class="main-product-title mb-4">MULTILAYER FILM</h3>
+          <h3 class="main-product-title mb-4">MULTILAYER FILM</h3>
           <div className="row justify-content-center">
-
             <div className="col-sm-12 col-md-6 col-lg-6">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${ShrinkWrap})`}}>
-                <p>Shrink Wrap</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${ShrinkWrap})`,
+                }}
+              >
+                <p className="product-card-title">Shrink Wrap</p>
+              </div>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card " style= {{backgroundImage:`url(${LDPEMilk})`}}>
-                <p>LDPE Milk Bag</p>
-                </div>
-              </a>
+              <div
+                className="product-card "
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${LDPEMilk})`,
+                }}
+              >
+                <p className="product-card-title">LDPE Milk Bag</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>  
+      </div>
 
       <div className="products-list-area pt-4 mt-4">
         <div className="container">
-        <h3 class="main-product-title mb-4">CORRUGATED BOX </h3>
+          <h3 class="main-product-title mb-4">CORRUGATED BOX </h3>
           <div className="row justify-content-center">
-
             <div className="col-sm-12">
-              <a href="poroduct-packaging-films.html">
-                <div className="product-card" style= {{backgroundImage:`url(${Corrugated})`}}>
-                <p>Corrugated box</p>
-                </div>
-              </a>
+              <div
+                className="product-card"
+                style={{
+                  background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${Corrugated})`,
+                }}
+              >
+                <p className="product-card-title">Corrugated box</p>
+              </div>
             </div>
           </div>
         </div>
-      </div> 
-       
+      </div>
+      <Footer/>
     </>
   );
 };

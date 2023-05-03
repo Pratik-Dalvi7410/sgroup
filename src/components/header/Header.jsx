@@ -5,10 +5,8 @@ import logoImg from "../../assets/images/logo/logo.png";
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container-fluid justify-content-spasebetwin">
-        <a className="logoimg" href="#">
-          <img src={logoImg} alt="Logo" />
-        </a>
+      <div className="container-fluid">
+        <img src={logoImg} className="header-logo" alt="Logo" />
         <button
           className="navbar-toggler"
           type="button"
@@ -21,11 +19,11 @@ const Header = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-1 w-100 justify-content-end">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-            <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only"> </span></a>
-      </li>
+              <a className="nav-link active" aria-current="page" href="#">
+                Home
+              </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">

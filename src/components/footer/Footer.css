@@ -1,0 +1,79 @@
+.footer {
+  background: url(../../assets/images/home/footer-bg.png) no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+  position: relative;
+}
+
+.footer-links {
+  list-style-type: none;
+  gap: 0.5rem;
+}
+
+.footer-links li {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: 0.3s;
+  color: rgba(64, 54, 99, 0.8);
+}
+
+.footer-links li:hover {
+  color: #f37122;
+}
+
+.footer-links-title {
+  color: #1f8ac9;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.footer-logo {
+  width: 12rem;
+}
+
+.footer-email {
+  color: rgba(64, 54, 99, 0.8);
+  font-size: 1rem;
+}
+
+.footer-number {
+  color: #49bcf7;
+  font-size: 1.5rem;
+}
+
+p.footer-address-title {
+  color: #1f8ac9;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.office {
+  font-size: 18px;
+  font-weight: 500;
+  color: #403663;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.footer-address p {
+  color: rgba(64, 54, 99, 0.8);
+}
+
+.footer-bottom {
+  padding: 40px 0;
+  text-align: right;
+  margin-right: 12rem;
+}
+.footer-bottom p a {
+  color: #403663;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.footer-bottom p a:hover {
+  color: #f37122;
+  transition: 0.5s;
+  text-decoration: underline;
+}

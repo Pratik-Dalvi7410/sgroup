@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import video from "../assets/Video/Network.mp4";
 import "./Home.css";
 import { TypeAnimation } from "react-type-animation";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -34,19 +35,20 @@ import logo23 from "../assets/images/home/23.png";
 import logo24 from "../assets/images/home/24.png";
 import logo25 from "../assets/images/home/25.png";
 import logo26 from "../assets/images/home/26.png";
-import Video2 from "../assets/Video/Network.mp4";
-import footerlogo from "../assets/images/logo/logo.png";
 import missionImage from "../assets/images/home/mission.png";
 import visionImage from "../assets/images/home/vision.png";
 import useWindowDimensions from "../hooks/Dimensions";
+import Footer from "../components/footer/Footer";
+import Header from "../components/header/Header";
 
 const Home = () => {
   const { width } = useWindowDimensions();
-
   return (
     <>
-      {/* <Header /> */}
-      <section class="banner d-flex align-items-center justify-content-center ">
+      <Header />
+    
+      <section class="banner d-flex align-items-center justify-content-center">
+        
         <div class="banner-content p-5 text-center d-flex align-items-center flex-column justify-content-center ">
           <h2 class="banner-header mb-4 text-uppercase">
             <TypeAnimation
@@ -68,13 +70,14 @@ const Home = () => {
           </p>
         </div>
       </section>
+
       <div className="s-box">
         <div class="firms ">
           <div className="container">
             <div className="firms-list-container w-100 p-5">
               <h3> OUR FIRMS</h3>
               <Swiper
-                slidesPerView={width > 992 ? 3 : width > 576 ? 2 : 1}
+                slidesPerView={3}
                 centeredSlides={true}
                 spaceBetween={30}
                 grabCursor={true}
@@ -120,38 +123,46 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="achievement">
-        <div className="section-header">
-          <h2>Looking for The First-Class Packaging Partner?</h2>
-          <p>We are certified for the best in packaging.</p>
-        </div>
-        <div class="post-thumb ">
-          <div className="container-post">
-            <Swiper
-              slidesPerView={1}
-              centeredSlides={true}
-              spaceBetween={30}
-              grabCursor={true}
-              loop={true}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-              modules={[Autoplay]}
-              className="post-swiper"
-            >
-              <SwiperSlide>
-                <div className="post-card">
-                  <img src={cerd1Image} alt="CardImage" />
-                </div>
-              </SwiperSlide>
+      <div className="achievement py-1  my-4">
+        <div className="container">
+          <div className="row justify-content-around">
+            <div className="justify justify-content-between"></div>
+            <div className="col-lg-6 col-md-12 col-sm-12">
+              <h2>Looking for The First-Class Packaging Partner?</h2>
+              <p>We are certified for the best in packaging.</p>
+            </div>
 
-              <SwiperSlide>
-                <div className="post-card">
-                  <img src={cerd2Image} alt="CardImage" />
+            <div className="wiper-slide col-lg-6 col-md-12 col-sm-12">
+              <div className="post-thumb">
+                <div className="container-post">
+                  <Swiper
+                    slidesPerView={1}
+                    centeredSlides={true}
+                    spaceBetween={30}
+                    grabCursor={false}
+                    loop={true}
+                    autoplay={{
+                      delay: 2500,
+                      disableOnInteraction: false,
+                    }}
+                    modules={[Autoplay]}
+                    className="post-swiper"
+                  >
+                    <SwiperSlide>
+                      <div className="post-cards">
+                        <img src={cerd1Image} alt="CardImage" />
+                      </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                      <div className="post-cards">
+                        <img src={cerd2Image} alt="CardImage" />
+                      </div>
+                    </SwiperSlide>
+                  </Swiper>
                 </div>
-              </SwiperSlide>
-            </Swiper>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -181,7 +192,7 @@ const Home = () => {
           slidesPerView={width > 992 ? 3 : width > 576 ? 2 : 1}
           centeredSlides={true}
           spaceBetween={30}
-          grabCursor={true}
+          grabCursor={false}
           loop={true}
           autoplay={{
             delay: 2500,
@@ -348,52 +359,43 @@ const Home = () => {
         </Swiper>
       </div>
 
-      <section class="banner-box  align-items-center justify-content-center ">
-        <div class="banner-box-content p-5 text-left d-flex align-items-left flex-column justify-content-top ">
-          <img src={missionImage} alt="mission Image " />
-          <h3 class="Mission"> Mission </h3>
-          <p class="mission">
-            Our mission is to provide best service to our existing clients by
-            being the most responsive, offering superior quality at optimal cost
-            by constant improvisation.
-          </p>
-        </div>
-
-        <div class="banner-box-content p-5 text-left d-flex align-items-left flex-column justify-content-top ">
-          <img src={visionImage} alt="mission Image " />
-          <h3 class="Mission"> Vision </h3>
-          <p class="mission">
-            Our vision is to be a global leading and most admired packaging
-            solutions provider with customer focus, by delivering excellence.
-          </p>
-        </div>
-      </section>
-
-      <section class="footer py-5">
+      <div className="banner-box">
+        <video className="bg-video" autoPlay muted loop={true} controls={false} >
+          <source src={video} type="video/mp4" />
+        </video>
+        <div className="video-overlay-bg"></div>
         <div className="container">
-          <div className="row">
-            <div className="col-lg-5">
-              <img src={footerlogo} className="footer-logo mb-3" alt="Footer Logo" />
-              <p className="footer-email mb-1">info@s-group.org</p>
-              <p className="footer-number">+91 0250 235 2100</p>
+          <div className="row justify-content: center">
+            <div className="col-lg-6 col-md-12 col-sm-12">
+              <div className="box">
+                <img src={missionImage} alt="mission Image " />
+                <h2> Mission </h2>
+                <p>
+                  Our mission is to provide best service to our existing clients
+                  by being the most responsive, offering superior quality at
+                  optimal cost by constant improvisation.
+                </p>
+              </div>
             </div>
-            <div className="col-lg-7">
-              <div className="row">
-                <div className="col-lg-6">
-                  <p className="footer-links-title mb-4">About Us</p>
-                  <ul className="footer-links m-0 p-0 d-flex flex-column align-items-start">
-                    <li>Home</li>
-                    <li>Our Products</li>
-                    <li>Contact us</li>
-                  </ul>
-                </div>
+
+            <div className="col-lg-6 col-md-12 col-sm-12">
+              <div className="box">
+                <img src={visionImage} alt="vision Image " />
+                <h2> Vision </h2>
+                <p>
+                  Our vision is to be a global leading and most admired
+                  packaging solutions provider with customer focus, by
+                  delivering excellence.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      <Footer/>
     </>
+    
+    
   );
 };
-
 export default Home;
